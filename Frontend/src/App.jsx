@@ -1,12 +1,13 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-xl font-bold ">
-        Hello world!
-      </h1>
-    </div>
+    // manages the routing of the application
+    <BrowserRouter>
+      <Route>{/*user layout */}</Route>
+      <Route>{/*admin layout*/ }</Route>
+    </BrowserRouter>
   )
 }
 
